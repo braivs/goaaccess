@@ -1,0 +1,272 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Lora', serif
+	font-size: 30px
+body
+	font-family: 'Bebas'
+	width: 100%
+	a
+		text-decoration: none
+		color: black
+		&:visited
+			color: black
+	p
+		span
+			color: orange
+	.nextPage,.prevPage
+		display: flex
+		flex-direction: row
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #009AD0
+			img
+				height: 15px
+				width: auto
+.gridContainer
+	display: grid
+	grid-template-areas: "header" "main" "footer-line" "footer"
+	grid-template-columns: 1fr
+	grid-template-rows: repeat(5,auto)
+	height: 100vh
+	header
+		display: flex
+		grid-area: header
+		justify-self: center
+		justify-content: center
+		a
+			&:visited
+				сolor:red
+			p
+				font-size: 65px
+				color: red
+				span
+					font-size: 65px
+					color: orange
+		.headerLogo
+			display: flex
+			justify-content: center
+			width: 100%
+			a
+				img
+					max-width: 100%
+					height: auto
+		.right
+			display: flex
+			flex-direction: column
+			.language-selector
+				// max-width: 200px
+				font-size: 25px
+				line-height: 1.5em
+				p
+					text-align: center
+					color: #009AD0
+					&:nth-of-type(1)
+						margin-bottom: 10px
+					&:nth-of-type(2),
+					&:nth-of-type(3)
+						border: 1px solid #009AD0
+						border-radius: 25px
+						padding: 10px
+					&.selected
+						color: white
+						background: #009AD0
+	main
+		display: flex
+		grid-area: main
+		justify-self: center
+		margin-top: 51px
+		width: 100%
+		flex-direction: column
+		.mainDescription
+			margin-bottom: 20px
+			p
+				margin-bottom: 10px
+		.mainDescriptionMobile
+			display: none
+		.mainImg
+			display: flex
+			justify-content: center
+			width: 100%
+			position: relative
+		.mainImgMobile
+			display: none
+		.bigMainImg
+			display: flex
+			justify-content: center
+		.nextFlex
+			display: flex
+			flex-direction: column
+			h1
+				margin: 0 auto
+			p
+				margin-bottom: 10px
+			blockquote
+				margin-bottom: 10px
+		.mainColomns
+			display: grid
+			grid-template-columns: repeat(2,1fr)
+			.mainColomnsLeft
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				margin-right: 10px
+				.mainColomnsTop
+					display: flex
+					margin: 0 auto
+					align-items: center
+					margin-bottom: 10px
+					img
+						margin-right: 10px
+				.mainColomnsBottom
+					display: flex
+					flex-direction: column
+					a
+						display: flex
+				.mainColomnsBottomMobile
+					display: none
+			.mainColomnsRight
+				display: flex
+				flex-direction: column
+				.mainColomnsTop
+					display: flex
+					margin: 0 auto
+					align-items: center
+					margin-bottom: 10px
+					img
+						margin-right: 10px
+				.mainColomnsBottomMobile
+					display: none
+		.price
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			flex-direction: column
+			img
+				max-width: 100%
+			p
+				text-align: center
+				padding: 0 30px 0 30px
+				white-space: nowrap
+			.bitcoin
+				span
+					color: #BD8913
+					font-size: 30px
+				.bitcontainer
+					display: flex
+					justify-content: center
+					align-items: center
+					flex-direction: column
+					img
+						max-height: 200px
+		.signUp
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-top: 20px
+			width: 100%
+			img
+				max-width: 100%
+			h1
+				padding: 0 30px 0 30px
+				white-space: nowrap
+		.contacts
+			display: flex
+			flex-direction: column
+			align-items: center
+			.imgContainer
+				display: flex
+				justify-content: center
+				img
+					height: 50px
+					width: auto
+	.footerLine
+		grid-area: footer-line
+		background: url("../img/footer_Line.png")
+	footer
+		grid-area: footer
+		background: #f8f8f8
+		display: grid
+		grid-template-columns: 1fr
+		.footerContainer
+			display: flex
+			height: 70px
+			justify-self: center
+			align-items: center
+			p
+				font-size: 15px
+
+@media screen and (max-width: 1080px)
+	*
+		font-size: 45px
+		.gridContainer
+			main
+				.mainDescription
+					display: none
+				.mainDescriptionMobile
+					display: flex
+					flex-direction: column
+					margin-bottom: 20px
+				.mainImg
+					display: none
+				.mainImgMobile
+					display: flex
+					justify-content: center
+					width: 100%
+					position: relative
+					img
+						max-width: 100%
+					.resize
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 25px
+						border: 5px solid #009AD0
+						background: #009AD0
+						opacity: 0.2
+						a
+							color: white
+							&:visited
+								color: white
+				.mainColomns
+					grid-template-columns: 1fr
+					grid-template-rows: repeat(2,1fr)
+					.mainColomnsLeft
+						.mainColomnsBottom
+							display: none
+						.mainColomnsBottomMobile
+							display: flex
+							flex-direction: column
+							margin-bottom: 20px
+					.mainColomnsRight
+						.mainColomnsBottom
+							display: none
+						.mainColomnsBottomMobile
+							display: flex
+							flex-direction: column
+				section.price
+					p
+						white-space: normal
+				section.signUp
+					h1
+						white-space: normal
+				.contacts
+					.imgContainer
+						img
+							height: 80px
+@media screen and (max-width: 945px)
+	.gridContainer
+		main
+			section.price
+				p
+					white-space: normal
+			section.signUp
+				h1
+					white-space: normal
+
+
+

@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-size: 30px;
+}
+
+body {
+  font-family: "Bebas";
+  width: 100%;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:visited {
+  color: black;
+}
+body p span {
+  color: orange;
+}
+body .nextPage, body .prevPage {
+  display: flex;
+  flex-direction: row;
+}
+body .nextPage a, body .prevPage a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #009AD0;
+}
+body .nextPage a img, body .prevPage a img {
+  height: 15px;
+  width: auto;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header" "main" "footer-line" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  height: 100vh;
+}
+.gridContainer header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: flex;
+  grid-area: header;
+  justify-self: center;
+  justify-content: center;
+}
+.gridContainer header a p {
+  font-size: 65px;
+  color: red;
+}
+.gridContainer header a p span {
+  font-size: 65px;
+  color: orange;
+}
+.gridContainer header .headerLogo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.gridContainer header .headerLogo a img {
+  max-width: 100%;
+  height: auto;
+}
+.gridContainer header .right {
+  display: flex;
+  flex-direction: column;
+}
+.gridContainer header .right .language-selector {
+  font-size: 25px;
+  line-height: 1.5em;
+}
+.gridContainer header .right .language-selector p {
+  text-align: center;
+  color: #009AD0;
+}
+.gridContainer header .right .language-selector p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+.gridContainer header .right .language-selector p:nth-of-type(2), .gridContainer header .right .language-selector p:nth-of-type(3) {
+  border: 1px solid #009AD0;
+  border-radius: 25px;
+  padding: 10px;
+}
+.gridContainer header .right .language-selector p.selected {
+  color: white;
+  background: #009AD0;
+}
+.gridContainer main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  display: flex;
+  grid-area: main;
+  justify-self: center;
+  margin-top: 51px;
+  width: 100%;
+  flex-direction: column;
+}
+.gridContainer main .mainDescription {
+  margin-bottom: 20px;
+}
+.gridContainer main .mainDescription p {
+  margin-bottom: 10px;
+}
+.gridContainer main .mainDescriptionMobile {
+  display: none;
+}
+.gridContainer main .mainImg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.gridContainer main .mainImgMobile {
+  display: none;
+}
+.gridContainer main .bigMainImg {
+  display: flex;
+  justify-content: center;
+}
+.gridContainer main .nextFlex {
+  display: flex;
+  flex-direction: column;
+}
+.gridContainer main .nextFlex h1 {
+  margin: 0 auto;
+}
+.gridContainer main .nextFlex p {
+  margin-bottom: 10px;
+}
+.gridContainer main .nextFlex blockquote {
+  margin-bottom: 10px;
+}
+.gridContainer main .mainColomns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gridContainer main .mainColomns .mainColomnsLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+.gridContainer main .mainColomns .mainColomnsLeft .mainColomnsTop {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.gridContainer main .mainColomns .mainColomnsLeft .mainColomnsTop img {
+  margin-right: 10px;
+}
+.gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottom {
+  display: flex;
+  flex-direction: column;
+}
+.gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottom a {
+  display: flex;
+}
+.gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottomMobile {
+  display: none;
+}
+.gridContainer main .mainColomns .mainColomnsRight {
+  display: flex;
+  flex-direction: column;
+}
+.gridContainer main .mainColomns .mainColomnsRight .mainColomnsTop {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.gridContainer main .mainColomns .mainColomnsRight .mainColomnsTop img {
+  margin-right: 10px;
+}
+.gridContainer main .mainColomns .mainColomnsRight .mainColomnsBottomMobile {
+  display: none;
+}
+.gridContainer main .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.gridContainer main .price img {
+  max-width: 100%;
+}
+.gridContainer main .price p {
+  text-align: center;
+  padding: 0 30px 0 30px;
+  white-space: nowrap;
+}
+.gridContainer main .price .bitcoin span {
+  color: #BD8913;
+  font-size: 30px;
+}
+.gridContainer main .price .bitcoin .bitcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gridContainer main .price .bitcoin .bitcontainer img {
+  max-height: 200px;
+}
+.gridContainer main .signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.gridContainer main .signUp img {
+  max-width: 100%;
+}
+.gridContainer main .signUp h1 {
+  padding: 0 30px 0 30px;
+  white-space: nowrap;
+}
+.gridContainer main .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridContainer main .contacts .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+.gridContainer main .contacts .imgContainer img {
+  height: 50px;
+  width: auto;
+}
+.gridContainer .footerLine {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer-line;
+  background: url("../img/footer_Line.png");
+}
+.gridContainer footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.gridContainer footer .footerContainer {
+  display: flex;
+  height: 70px;
+  justify-self: center;
+  align-items: center;
+}
+.gridContainer footer .footerContainer p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+  * {
+    font-size: 45px;
+  }
+  * .gridContainer main .mainDescription {
+    display: none;
+  }
+  * .gridContainer main .mainDescriptionMobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  * .gridContainer main .mainImg {
+    display: none;
+  }
+  * .gridContainer main .mainImgMobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  * .gridContainer main .mainImgMobile img {
+    max-width: 100%;
+  }
+  * .gridContainer main .mainImgMobile .resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    border: 5px solid #009AD0;
+    background: #009AD0;
+    opacity: 0.2;
+  }
+  * .gridContainer main .mainImgMobile .resize a {
+    color: white;
+  }
+  * .gridContainer main .mainImgMobile .resize a:visited {
+    color: white;
+  }
+  * .gridContainer main .mainColomns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  * .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottom {
+    display: none;
+  }
+  * .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottomMobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  * .gridContainer main .mainColomns .mainColomnsRight .mainColomnsBottom {
+    display: none;
+  }
+  * .gridContainer main .mainColomns .mainColomnsRight .mainColomnsBottomMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  * .gridContainer main section.price p {
+    white-space: normal;
+  }
+  * .gridContainer main section.signUp h1 {
+    white-space: normal;
+  }
+  * .gridContainer main .contacts .imgContainer img {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .gridContainer main section.price p {
+    white-space: normal;
+  }
+  .gridContainer main section.signUp h1 {
+    white-space: normal;
+  }
+}
+/*# sourceMappingURL=style.css.map */

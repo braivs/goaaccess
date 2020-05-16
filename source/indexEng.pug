@@ -1,0 +1,76 @@
+include includes/headerEng
+mixin nextPage(link)
+	.nextPage
+		a(href=link)
+			img(src="img/more_icon.png")
+		a(href=link) See more
+<!DOCTYPE html>
+html(lang="en")
+	include includes/headEng
+	body
+		.gridContainer
+			+header("index.html")
+			main
+				.mainDescription
+					p.
+						Is it possible to feel and look younger WITHOUT injections, Botox, acupuncture and other injuries for your body? YES!
+					p.
+						<span>Access Facelift™</span> - is a wonderful way to rejuvenate the face and reverse the signs of aging on the face and throughout the entire body. If you repeat this process several times (at least 20 times), the result may be permanent.
+					p.
+						<i><span>Access Facelift™</span> differs from other alternatives in that it is softer, more beneficial and easier for you and your body. What could it be even better than that?</i>
+					p.
+						During this training, you will receive a full session of energy face lifting, and also learn to give it to others.
+					p.
+						<span>Access Consciousness Facelift™</span> professionally provided in sanatoriums, massage parlors, anti-aging centers, beauty salons, plastic surgery clinics and wellness centers around the world.
+				.mainDescriptionMobile
+					p.
+						Is it possible to feel and look younger WITHOUT injections, Botox, acupuncture and other injuries for your body? YES!
+					p.
+						<span>Access Facelift™</span> is a wonderful way to rejuvenate the face and reverse the signs of aging on the face and throughout the entire body.
+					p.
+						During this training, you will receive a full session of energy face lifting, and also learn to give it to others.
+					+nextPage("mainDescriptionEng.html")
+				.mainImg
+					img(src="img/mainEng.jpg")
+				.mainImgMobile
+					a(href="bigMainImgEng.html")
+						img(src="img/mainEng.jpg")
+					.resize 
+						a(href="bigMainImgEng.html") Zoom in
+				section.mainColomns
+					.mainColomnsLeft
+						.mainColomnsTop
+							img(src="img/magnify_glass.png" alt="magnify_glass")
+							h1 Goal of <span>Acess:</span>
+						.mainColomnsBottom
+							p Goal of <span>Access</span> do not destroy this reality.
+							p Goal of <span>Access</span> not fight again this reality.
+							p Goal of <span>Access</span> not to see the incorrectness of this reality.
+							p Goal of <span>Access</span> is the creation of another reality.
+							p Goal of <span>Access</span> is to create the world as a larger set of options and a larger set of opportunities so that all of humanity can flourish.
+						.mainColomnsBottomMobile
+							p Goal of <span>Access</span> do not destroy this reality.
+							p Goal of <span>Access</span> not fight again this reality.
+							p Goal of <span>Access</span> not to see the incorrectness of this reality.
+							+nextPage("targetEng.html")
+					.mainColomnsRight
+						.mainColomnsTop
+							img(src="img/star.png" alt="magnify_glass")
+							h1 Introduction to <span>Access Consciousness®:</span>
+						.mainColomnsBottom
+							p.
+								<span>Access</span> - a set of tools and techniques that are designed to promote <i> mindfulness </i> and <i> consciousness </i> to a greater extent for each of us.
+							p.
+								<i>Mindfulness</i> includes everything without judgment. This desire and ability to be fully conscious and fully present in all areas of your life.
+							p.
+								<i>Mindfulness</i> - the ability to constantly open up to great possibilities, more choice and more life.
+							.mainColomnsBottomContainer
+								+nextPage("introductionEng.html")
+						.mainColomnsBottomMobile
+							p.
+								<span>Access</span> - a set of tools and techniques that are designed to promote <i>mindfulness</i> and <i>consciousness</i> to a greater extent for each of us.
+							+nextPage("introductionEng.html")
+				include includes/priceEng
+				include includes/signUpEng
+				include includes/contacts
+			include includes/footerEng
