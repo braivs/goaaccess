@@ -43,267 +43,105 @@ body {
         height: 15px;
         width: auto; }
 
-.gridContainer {
-  display: grid;
-  grid-template-areas: "header" "main" "footer-line" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  height: 100vh; }
-  .gridContainer header {
+header a p {
+  font-size: 65px;
+  color: red; }
+  header a p span {
+    font-size: 65px;
+    color: orange; }
+
+header .headerLogo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  header .headerLogo a img {
+    max-width: 100%;
+    height: auto; }
+
+header .language-selector {
+  font-size: 25px;
+  line-height: 1.5em; }
+  header .language-selector p {
+    text-align: center;
+    color: #009AD0; }
+    header .language-selector p:nth-of-type(1) {
+      margin-bottom: 10px; }
+    header .language-selector p:nth-of-type(2), header .language-selector p:nth-of-type(3) {
+      border: 1px solid #009AD0;
+      border-radius: 25px;
+      padding: 10px; }
+    header .language-selector p.selected {
+      color: white;
+      background: #009AD0; }
+
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: main;
+  justify-self: center;
+  margin-top: 51px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  main .mainDescription {
+    margin-bottom: 20px; }
+    main .mainDescription p {
+      margin-bottom: 10px; }
+  main .mainDescriptionMobile {
+    display: none; }
+  main .mainImg {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    grid-area: header;
-    justify-self: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    position: relative; }
+  main .mainImgMobile {
+    display: none; }
+  main .bigMainImg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .gridContainer header a p {
-      font-size: 65px;
-      color: red; }
-      .gridContainer header a p span {
-        font-size: 65px;
-        color: orange; }
-    .gridContainer header .headerLogo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 100%; }
-      .gridContainer header .headerLogo a img {
-        max-width: 100%;
-        height: auto; }
-    .gridContainer header .right {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .gridContainer header .right .language-selector {
-        font-size: 25px;
-        line-height: 1.5em; }
-        .gridContainer header .right .language-selector p {
-          text-align: center;
-          color: #009AD0; }
-          .gridContainer header .right .language-selector p:nth-of-type(1) {
-            margin-bottom: 10px; }
-          .gridContainer header .right .language-selector p:nth-of-type(2), .gridContainer header .right .language-selector p:nth-of-type(3) {
-            border: 1px solid #009AD0;
-            border-radius: 25px;
-            padding: 10px; }
-          .gridContainer header .right .language-selector p.selected {
-            color: white;
-            background: #009AD0; }
-  .gridContainer main {
+  main .nextFlex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    grid-area: main;
-    justify-self: center;
-    margin-top: 51px;
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .gridContainer main .mainDescription {
-      margin-bottom: 20px; }
-      .gridContainer main .mainDescription p {
-        margin-bottom: 10px; }
-    .gridContainer main .mainDescriptionMobile {
-      display: none; }
-    .gridContainer main .mainImg {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 100%;
-      position: relative; }
-    .gridContainer main .mainImgMobile {
-      display: none; }
-    .gridContainer main .bigMainImg {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .gridContainer main .nextFlex {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .gridContainer main .nextFlex h1 {
-        margin: 0 auto; }
-      .gridContainer main .nextFlex p {
-        margin-bottom: 10px; }
-      .gridContainer main .nextFlex blockquote {
-        margin-bottom: 10px; }
-    .gridContainer main .mainColomns {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); }
-      .gridContainer main .mainColomns .mainColomnsLeft {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        margin-right: 10px; }
-        .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsTop {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          margin: 0 auto;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          margin-bottom: 10px; }
-          .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsTop img {
-            margin-right: 10px; }
-        .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottom {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-                  flex-direction: column; }
-          .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottom a {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex; }
-        .gridContainer main .mainColomns .mainColomnsLeft .mainColomnsBottomMobile {
-          display: none; }
-      .gridContainer main .mainColomns .mainColomnsRight {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .gridContainer main .mainColomns .mainColomnsRight .mainColomnsTop {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          margin: 0 auto;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          margin-bottom: 10px; }
-          .gridContainer main .mainColomns .mainColomnsRight .mainColomnsTop img {
-            margin-right: 10px; }
-        .gridContainer main .mainColomns .mainColomnsRight .mainColomnsBottomMobile {
-          display: none; }
-    .gridContainer main .price {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 100%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .gridContainer main .price img {
-        max-width: 100%; }
-      .gridContainer main .price p {
-        text-align: center;
-        padding: 0 30px 0 30px;
-        white-space: nowrap; }
-      .gridContainer main .price .bitcoin span {
-        color: #BD8913;
-        font-size: 30px; }
-      .gridContainer main .price .bitcoin .bitcontainer {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .gridContainer main .price .bitcoin .bitcontainer img {
-          max-height: 200px; }
-    .gridContainer main .signUp {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-top: 20px;
-      width: 100%; }
-      .gridContainer main .signUp img {
-        max-width: 100%; }
-      .gridContainer main .signUp h1 {
-        padding: 0 30px 0 30px;
-        white-space: nowrap; }
-    .gridContainer main .contacts {
+    main .nextFlex h1 {
+      margin: 0 auto; }
+    main .nextFlex p {
+      margin-bottom: 10px; }
+    main .nextFlex blockquote {
+      margin-bottom: 10px; }
+  main .mainColomns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    main .mainColomns .mainColomnsLeft {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -313,43 +151,183 @@ body {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .gridContainer main .contacts .imgContainer {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-right: 10px; }
+      main .mainColomns .mainColomnsLeft .mainColomnsTop {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .gridContainer main .contacts .imgContainer img {
-          height: 50px;
-          width: auto; }
-  .gridContainer .footerLine {
-    grid-area: footer-line;
-    background: url("../img/footer_Line.png"); }
-  .gridContainer footer {
-    grid-area: footer;
-    background: #f8f8f8;
-    display: grid;
-    grid-template-columns: 1fr; }
-    .gridContainer footer .footerContainer {
+        margin: 0 auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 10px; }
+        main .mainColomns .mainColomnsLeft .mainColomnsTop img {
+          margin-right: 10px; }
+      main .mainColomns .mainColomnsLeft .mainColomnsBottom {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        main .mainColomns .mainColomnsLeft .mainColomnsBottom a {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+      main .mainColomns .mainColomnsLeft .mainColomnsBottomMobile {
+        display: none; }
+    main .mainColomns .mainColomnsRight {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      height: 70px;
-      justify-self: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      main .mainColomns .mainColomnsRight .mainColomnsTop {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 10px; }
+        main .mainColomns .mainColomnsRight .mainColomnsTop img {
+          margin-right: 10px; }
+      main .mainColomns .mainColomnsRight .mainColomnsBottomMobile {
+        display: none; }
+  main .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main .price img {
+      max-width: 100%; }
+    main .price p {
+      text-align: center;
+      padding: 0 30px 0 30px;
+      white-space: nowrap; }
+    main .price .bitcoin span {
+      color: #BD8913;
+      font-size: 30px; }
+    main .price .bitcoin .bitcontainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-      .gridContainer footer .footerContainer p {
-        font-size: 15px; }
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      main .price .bitcoin .bitcontainer img {
+        max-height: 200px; }
+  main .signUp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+    width: 100%; }
+    main .signUp img {
+      max-width: 100%; }
+    main .signUp h1 {
+      padding: 0 30px 0 30px;
+      white-space: nowrap; }
+  main .contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main .contacts .imgContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      main .contacts .imgContainer img {
+        height: 50px;
+        width: auto; }
+
+.footerLine {
+  grid-area: footer-line;
+  background: url("../img/footer_Line.png"); }
+
+footer {
+  grid-area: footer;
+  background: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr; }
+  footer .footerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    justify-self: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .footerContainer p {
+      font-size: 15px; }
 
 @media screen and (max-width: 1080px) {
   * {
