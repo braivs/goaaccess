@@ -71,18 +71,22 @@ body .card img {
   width: 200px;
   height: 200px; }
 
+body .cardMain img {
+  width: 300px;
+  height: 350px; }
+
 body .row {
   margin: 50px 0; }
+
+body .modal .modal-dialog {
+  width: 100%; }
 
 header {
   margin-top: 50px; }
   header a img {
     max-width: 100%; }
-  header .language-selector {
-    font-size: 25px;
-    line-height: 1.5em; }
-    header .language-selector p {
-      color: #009AD0; }
+  header .language-selector p {
+    color: #009AD0; }
 
 main .mainImg {
   display: -webkit-box;
@@ -173,6 +177,8 @@ main .contacts {
 footer {
   padding: 10px 0;
   background: #f3f3bc; }
+  footer a:hover {
+    text-decoration: none; }
   footer .row {
     margin: 0; }
   footer .aboutMe img {

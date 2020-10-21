@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"/>
   </head>
   <body>
+    
     <!-- Modal Цели-->
     <div class="modal fade" id="modalTargets" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -32,9 +33,9 @@
         </div>
       </div>
     </div>
-    <!-- Modal Введение-->
+
     <div class="modal fade" id="modalIntro" tabindex="-1" role="dialog" aria-labelledby="modalIntroTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modalIntroTitle">Введение в <span>Access Consciousness®</h5>
@@ -60,15 +61,67 @@
         </div>
       </div>
     </div>
-    <header class="container">
-      <div class="row">
-        <div class="col">
-          <div class="headerLogo">
-            <a href="index.html"><img src="img/logoCrop.png" alt=""/></a>
+
+    <!-- Modal Схема энергетических центров головы-->
+    <div class="modal fade" id="modalMainImg" tabindex="-1" role="dialog" aria-labelledby="modalMainImg" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMainImgTitle">Схема энергетических центров головы</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Здесь будет схема
+              <img src="img/main.jpeg" alt="">
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
           </div>
         </div>
-        <div class="row language-selector">
-            <div class="col-12 text-center"><p>Choose language:</p></div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Заказать сеанс</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <p>Для заказа напишите в Telegram:</p>
+              </div>
+              <div class="col-12 text-center">
+                <a href="https://t.me/brightwiths">
+                  <img src="img/social-telegram-color.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="container">
+      <div class="row">
+        <div class="col logo">
+            <a href="index.html">
+              <img src="img/logoCrop.png" alt=""/>
+            </a>
+        </div>
+        <div class="col text-center language-selector">
+            <p>Choose language:</p>
             <div class="col-12 text-center"><button class="btn btn-outline-primary">english</button></div>
             <div class="col-12 text-center"><button class="btn btn-primary" disabled>russian</button>
           </div>  
@@ -87,12 +140,6 @@
           <p><i><span>Access Facelift™</span> отличается от других альтернатив тем, что он мягче, благотворнее и легче для вас и вашего тела. Как может быть еще лучше чем это?</i></p>
           <p>В течении этого тренинга вы получите полную сессию энергетического лифтинга лица, а также научитесь давать ее другим.</p>
           <p><span>Access Consciousness Facelift™</span> профессионально предоставляется в санаториях, массажных салонах, anti-aging центрах, косметических салонах, клиниках пластической хирургии и велнес-центрах по всему миру.</p>
-        </div>
-        <div class="row">
-          <div class="mainImg"><img src="img/main.jpeg"/></div>
-          <div class="mainImgMobile"><a href="bigMainImg.html"><img src="img/main.jpeg"/></a>
-            <div class="resize"> <a href="bigMainImg.html">Увеличить</a></div>
-          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -117,34 +164,30 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <div class="card text-center shadow cardMain">
+              <img src="img/main.jpeg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Схема энергетических центров головы</h5>
+                  <p>Нажмите для увеличения</p>
+                <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalMainImg">Увеличить</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row price">
           <div class="col-12 text-center"><h3>Стоимость:</h3></div>
           <div class="col-12 text-center"><p>3500 рупий (сессия + тренинг)</p></div>
           <div class="col-12 text-center"><p>Сможете проводить другим и зарабатывать сами</p></div>
           <div class="col-12 text-center"><h4>Принимаем биткоин:</h4></div>
-          <div class="col-12 text-center"><p>3Kznb8Z4skuUZp6rJJTKG91UMz9jn42Yno</p></div>
           <div class="col-12 text-center bitcoin"><img src="img/btcQR.png" alt=""/></div>
         </div>
-        <!-- <div class="row"> -->
-          <!-- <div class="col text-center"> -->
-            <!--  -->
-            <!-- <p>.</p> -->
-            <!-- Сможете проводить другим и зарабатывать сами. -->
-            <!-- <div class="bitcoin">
-              <div class="bitcontainer">
-                <p><span>Принимаем биткоин:</span></p><img src="img/btcQR.png" alt=""/>
-                <p><span>3Kznb8Z4skuUZp6rJJTKG91UMz9jn42Yno</span></p>
-              </div>
-            </div> -->
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- <section class="signUp">
-          <h1><b>Записаться на сеанс:</b></h1>
-        </section>
-        <section class="contacts">
-          <p>+91 81809 54858</p>
-          <div class="imgContainer"><a href="https://api.whatsapp.com/send?phone=+918180954858"><img src="img/social-whatsupp-color.png" alt=""/></a><a href="tg://resolve?domain=brightwiths"><img src="img/social-telegram-color.png" alt=""/></a><a href="viber://chat?number=+918180954858"><img src="img/social-viber-color.png" alt=""/></a></div>
-        </section> -->
+        <div class="row order">
+          <div class="col text-center">
+            <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modalOrder"">Заказать сеанс</a>
+          </div>
+        </div>
     </main>
     <footer class="container-fluid text-center">
       <div class="row d-flex align-items-center">
@@ -166,15 +209,5 @@
 		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 		<script src="js/bootstrap.js"></script>
     </footer>
-
   </body>
 </html>
-
-
-          <!-- </div>
-              <p><span>Access</span> - набор инструментов и техник, которые разработаны для того, чтобы способствовать <i>осознанности</i> и <i>сознанию</i> в большей мере у каждого из нас. </p>
-              <p><i>Осознанность</i> включает все, без суждения. Это желание и способность быть полностью осознанным и всецело присутствовать во всех областях вашей жизни.</p>
-              <p><i>Осознанность</i> - способность постоянно открываться большим возможностям, большему выбору и жизни в большей степени.</p>
-              <div class="mainColomnsBottomContainer">
-                <div class="nextPage"><a href="introduction.html"><img src="img/more_icon.png"/></a><a href="introduction.html">Подробнее</a></div>
-        </div> -->
