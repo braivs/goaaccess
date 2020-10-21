@@ -58,16 +58,18 @@ body h2 {
 body h3 {
   color: orange; }
 
+body h4 {
+  font-size: 30px;
+  color: #BD8913; }
+
 body h5 {
   color: blue;
   font-size: 30px; }
 
-body .card {
-  border: none; }
-  body .card img {
-    margin: 10px auto 0;
-    width: 200px;
-    height: 200px; }
+body .card img {
+  margin: 10px auto 0;
+  width: 200px;
+  height: 200px; }
 
 body .row {
   margin: 50px 0; }
@@ -124,30 +126,8 @@ main .nextFlex {
   main .nextFlex blockquote {
     margin-bottom: 10px; }
 
-main .price .bitcoin span {
-  color: #BD8913;
-  font-size: 30px; }
-
-main .price .bitcoin .bitcontainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  main .price .bitcoin .bitcontainer img {
-    max-height: 200px; }
+main .price img {
+  max-height: 200px; }
 
 main .signUp {
   display: -webkit-box;
@@ -190,27 +170,14 @@ main .contacts {
       height: 50px;
       width: auto; }
 
-.footerLine {
-  grid-area: footer-line;
-  background: url("../img/footer_Line.png"); }
-
 footer {
-  grid-area: footer;
-  background: #f8f8f8;
-  display: grid;
-  grid-template-columns: 1fr; }
-  footer .footerContainer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70px;
-    justify-self: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    footer .footerContainer p {
-      font-size: 15px; }
+  padding: 10px 0;
+  background: #f3f3bc; }
+  footer .row {
+    margin: 0; }
+  footer .aboutMe img {
+    opacity: 0.5; }
+  footer .goaExcursions img {
+    width: 250px; }
 
 /*# sourceMappingURL=style.css.map */

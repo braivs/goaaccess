@@ -36,11 +36,15 @@ body
 			color: orange
 	h3
 		color: orange
+	h4
+		font-size: 30px
+		color: #BD8913
 	h5
 		color: blue
 		font-size: 30px
 	.card
-		border: none
+		// border: none
+		// align-items: space-between
 		img
 			margin: 10px auto 0
 			width: 200px
@@ -78,17 +82,8 @@ main
 		blockquote
 			margin-bottom: 10px
 	.price
-		.bitcoin
-			span
-				color: #BD8913
-				font-size: 30px
-			.bitcontainer
-				display: flex
-				justify-content: center
-				align-items: center
-				flex-direction: column
-				img
-					max-height: 200px
+		img
+			max-height: 200px
 	.signUp
 		display: flex
 		justify-content: center
@@ -109,19 +104,16 @@ main
 			img
 				height: 50px
 				width: auto
-.footerLine
-	grid-area: footer-line
-	background: url("../img/footer_Line.png")
 footer
-	grid-area: footer
-	background: #f8f8f8
-	display: grid
-	grid-template-columns: 1fr
-	.footerContainer
-		display: flex
-		height: 70px
-		justify-self: center
-		align-items: center
-		p
-			font-size: 15px
+	padding: 10px 0
+	background: #f3f3bc
+	.row
+		margin: 0
+	.aboutMe
+		img
+			opacity: 0.5
+	.goaExcursions
+		img
+			width: 250px
+		
 @import  'media'
