@@ -1,111 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8"/>
-    <title>Access Bars and Facelift™</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Access Bars and facelift™</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css/"/>
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <div class="gridContainer">
-      <header>
-        <div class="headerLogo"><a href="indexEng.html"><img src="img/logoCrop.png" alt=""/></a></div>
-        <div class="right">
-          <div class="language-selector">
-            <p>Choose language:</p>
-            <p class="selected">english</p>
-            <p><a href="index.html">russian</a></p>
+    
+    <!-- Modal Goals-->
+    <div class="modal fade" id="modalTargets" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Goals of Acess®</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="headText"><a href="indexEng.html">
-              <p>ACCESS <span>BARS</span> and <span>FACELIFT</span></p></a></div>
+          <div class="modal-body">
+            <p>Goal of <span>Access</span> do not destroy this reality.</p>
+            <p>Goal of <span>Access</span> not fight again this reality.</p>
+            <p>Goal of <span>Access</span> not to see the incorrectness of this reality.</p>
+            <p>Goal of <span>Access</span> is the creation of another reality.</p>
+            <p>Goal of <span>Access</span> is to create the world as a larger set of options and a larger set of opportunities so that all of humanity can flourish.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
         </div>
-      </header>
-      <main>
-        <div class="mainDescription">
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalIntro" tabindex="-1" role="dialog" aria-labelledby="modalIntroTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalIntroTitle">Introduction to <span>Access Consciousness®:</span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><span>Access</span> - a set of tools and techniques that are designed to promote <i> mindfulness </i> and <i> consciousness </i> to a greater extent for each of us.</p>
+            <p>The suggestion of <span> Access </span> is to help you recognize yourself as the limitless creature that you really are, and begin to create your life outside the “I” that you see yourself. As a limitless creature, you act from infinite perception, knowledge, presence and receipt. For a limitless creature, anything is possible at any time and you have a full choice.</p>
+            <p>As a limited creature, you tend to act on the basis of thoughts, feelings and emotions. <span> Access Consciousness® </span> offers you freedom from the polarity, conclusions, conventions, and limitations of your thoughts, feelings, and emotions. When we act on limitations, we have little choice and limited opportunities.</p>
+            <p>The polarity keeps us from seeing things as they really are, so we cannot change what we would like to change. It makes us continue to act on the basis of injuries and dramas, anxieties and intrigues of this reality. Our polarity dependence is one of the most powerful addictions.</p>
+            <p>One of the most effective methods of getting free of this addiction is to act on the basis of permission. Permission is when everything is just an interesting point of view. Permission allows us to become aware of all areas of our lives where we either adapt and agree, or resist and respond to any points of view, thoughts, feelings, emotions, beliefs, judgments, conclusions or considerations.</p>
+            <p>We can begin to free ourselves by reminding ourselves that everything that we think, feel, everything that we believe in, that we condemn, or the decisions that we make are just an interesting point of view.</p>
+            <blockquote> 
+              <p>"Mindfulness is the ability to be present at every moment of your life, without judging yourself or anyone else. This is the ability to receive everything without rejecting anything and to create everything that you desire in life. To have more than what you currently have, and more than what you can imagine."</p>
+              <cite>Gary Douglas, founder of Access Consciousness®</cite>
+            </blockquote>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Diagram of the energy centers of the head-->
+    <div class="modal fade" id="modalMainImg" tabindex="-1" role="dialog" aria-labelledby="modalMainImg" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMainImgTitle">Diagram of the energy centers of the head</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="img/mainEng.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Order section</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p>For order session write in Telegram:</p>
+              </div>
+              <div class="col-12 text-center">
+                <a href="https://t.me/brightwiths">
+                  <img src="img/social-telegram-color.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="container">
+      <div class="row">
+        <div class="col logo">
+            <a href="index.html">
+              <img src="img/logoCrop.png" alt=""/>
+            </a>
+        </div>
+        <div class="col text-center language-selector">
+            <p>Choose language:</p>
+            <div class="col-12 text-center"><button class="btn btn-primary" disabled>english</></div>
+            <div class="col-12 text-center"><button class="btn btn-outline-primary" onclick='location.href="index.html"'>russian</button>
+          </div>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <h1>ACCESS <span>BARS</span> and <span>FACELIFT</span></h1>
+        </div>  
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
           <p>Is it possible to feel and look younger WITHOUT injections, Botox, acupuncture and other injuries for your body? YES!</p>
           <p><span>Access Facelift™</span> - is a wonderful way to rejuvenate the face and reverse the signs of aging on the face and throughout the entire body. If you repeat this process several times (at least 20 times), the result may be permanent.</p>
           <p><i><span>Access Facelift™</span> differs from other alternatives in that it is softer, more beneficial and easier for you and your body. What could it be even better than that?</i></p>
           <p>During this training, you will receive a full session of energy face lifting, and also learn to give it to others.</p>
           <p><span>Access Consciousness Facelift™</span> professionally provided in sanatoriums, massage parlors, anti-aging centers, beauty salons, plastic surgery clinics and wellness centers around the world.</p>
         </div>
-        <div class="mainDescriptionMobile">
-          <p>Is it possible to feel and look younger WITHOUT injections, Botox, acupuncture and other injuries for your body? YES!</p>
-          <p><span>Access Facelift™</span> is a wonderful way to rejuvenate the face and reverse the signs of aging on the face and throughout the entire body.</p>
-          <p>During this training, you will receive a full session of energy face lifting, and also learn to give it to others.</p>
-          <div class="nextPage"><a href="mainDescriptionEng.html"><img src="img/more_icon.png"/></a><a href="mainDescriptionEng.html">See more</a></div>
-        </div>
-        <div class="mainImg"><img src="img/mainEng.jpg"/></div>
-        <div class="mainImgMobile"><a href="bigMainImgEng.html"><img src="img/mainEng.jpg"/></a>
-          <div class="resize"> <a href="bigMainImgEng.html">Zoom in</a></div>
-        </div>
-        <section class="mainColomns">
-          <div class="mainColomnsLeft">
-            <div class="mainColomnsTop"><img src="img/magnify_glass.png" alt="magnify_glass"/>
-              <h1>Goal of <span>Acess:</span></h1>
-            </div>
-            <div class="mainColomnsBottom">
-              <p>Goal of <span>Access</span> do not destroy this reality.</p>
-              <p>Goal of <span>Access</span> not fight again this reality.</p>
-              <p>Goal of <span>Access</span> not to see the incorrectness of this reality.</p>
-              <p>Goal of <span>Access</span> is the creation of another reality.</p>
-              <p>Goal of <span>Access</span> is to create the world as a larger set of options and a larger set of opportunities so that all of humanity can flourish.</p>
-            </div>
-            <div class="mainColomnsBottomMobile">
-              <p>Goal of <span>Access</span> do not destroy this reality.</p>
-              <p>Goal of <span>Access</span> not fight again this reality.</p>
-              <p>Goal of <span>Access</span> not to see the incorrectness of this reality.</p>
-              <div class="nextPage"><a href="targetEng.html"><img src="img/more_icon.png"/></a><a href="targetEng.html">See more</a></div>
-            </div>
-          </div>
-          <div class="mainColomnsRight">
-            <div class="mainColomnsTop"><img src="img/star.png" alt="magnify_glass"/>
-              <h1>Introduction to <span>Access Consciousness®:</span></h1>
-            </div>
-            <div class="mainColomnsBottom">
-              <p><span>Access</span> - a set of tools and techniques that are designed to promote <i> mindfulness </i> and <i> consciousness </i> to a greater extent for each of us.</p>
-              <p><i>Mindfulness</i> includes everything without judgment. This desire and ability to be fully conscious and fully present in all areas of your life.</p>
-              <p><i>Mindfulness</i> - the ability to constantly open up to great possibilities, more choice and more life.</p>
-              <div class="mainColomnsBottomContainer">
-                <div class="nextPage"><a href="introductionEng.html"><img src="img/more_icon.png"/></a><a href="introductionEng.html">See more</a></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center shadow">
+              <img src="img/target.png" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Goals of Acess®</h5>
+                <p>Goal of <span>Access</span> do not destroy this reality.</p>
+                <p>Goal of <span>Access</span> not fight again this reality.</p>
+                <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalTargets">See more</a>
               </div>
             </div>
-            <div class="mainColomnsBottomMobile">
-              <p><span>Access</span> - a set of tools and techniques that are designed to promote <i>mindfulness</i> and <i>consciousness</i> to a greater extent for each of us.</p>
-              <div class="nextPage"><a href="introductionEng.html"><img src="img/more_icon.png"/></a><a href="introductionEng.html">See more</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-center shadow">
+              <img src="img/intro.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Introduction to Access Consciousness®</h5>
+                <p class="card-text">Access</span> - a set of tools and techniques that are designed to promote <i> mindfulness </i> and <i> consciousness...</p>
+                <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalIntro"">See more</a>
+              </div>
             </div>
           </div>
-        </section>
-        <section class="price">
-          <div class="imgContainer"><img src="img/works-separator-background.png" alt=""/></div>
-          <p>
-            <b>Price:</b><br>
-            Now 1500 rupees <i>for the first clients</i><br>
-            After that, the price will be raised to 3500 rupees.
-          </p>
-          <div class="bitcoin">
-            <div class="bitcontainer">
-              <p><span>Accepting bitcoin:</span></p><img src="img/btcQR.png" alt=""/>
-              <p><span>3Kznb8Z4skuUZp6rJJTKG91UMz9jn42Yno</span></p>
-            </div>
-          </div>
-          <div class="imgContainer"><img src="img/works-separator-background.png" alt=""/></div>
-        </section>
-        <section class="signUp">
-          <div class="imgContainer"><img src="img/works-separator-background.png" alt=""/></div>
-          <h1><b>Sign up for a session:</b></h1>
-          <div class="imgContainer"><img src="img/works-separator-background.png" alt=""/></div>
-        </section>
-        <section class="contacts">
-          <p>+91 44996 65426</p>
-          <div class="imgContainer"><a href="https://api.whatsapp.com/send?phone=+917499665426"><img src="img/social-whatsupp-color.png" alt=""/></a><a href="tg://resolve?domain=astralpower"><img src="img/social-telegram-color.png" alt=""/></a><a href="viber://chat?number=+917499665426"><img src="img/social-viber-color.png" alt=""/></a></div>
-        </section>
-      </main>
-      <footer>
-        <div class="footerContainer">
-          <p>Devaloped by Briws. 2019</p>
         </div>
-      </footer>
-    </div>
+        <div class="row">
+          <div class="col">
+            <div class="card text-center shadow cardMain">
+              <img src="img/mainEng.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Diagram of the energy centers of the head</h5>
+                  <p>Click for zoom in</p>
+                <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalMainImg">Zoom In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row price">
+          <div class="col-12 text-center"><h3>Price:</h3></div>
+          <div class="col-12 text-center"><p>3500 rupees (section + training)</p></div>
+          <div class="col-12 text-center"><p>You can do to another people and get money</p></div>
+          <div class="col-12 text-center"><h4>Accepting bitcoin:</h4></div>
+          <div class="col-12 text-center"><p class="btcNum">p3Kznb8Z4skuUZp6rJJTKG91UMz9jn42Yno</></div>
+          <div class="col-12 text-center bitcoin"><img src="img/btcQR.png" alt=""/></div>
+        </div>
+        <div class="row order">
+          <div class="col text-center">
+            <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modalOrder"">Get session</a>
+          </div>
+        </div>
+    </main>
+    <footer class="container-fluid text-center">
+      <div class="row d-flex align-items-center">
+        <div class="col-sm-8 col-xl-6 aboutMe">
+          <span>Site created by BriWS</span>
+          <span>
+            <a href="https://t.me/brightwiths">
+              <img src="img/social-telegram-color.png" alt="">
+            </a>
+          </span>
+          <span>2019</span>
+        </div>
+        <div class="col-sm-4 col-xl-6 goaExcursions">
+          <a href="https://brightwiths.github.io/goaexcursions"> 
+            <img src="img/goaexeng.jpg" alt="goaexrus">
+        </div>
+      </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+    </footer>
   </body>
 </html>
