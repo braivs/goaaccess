@@ -172,18 +172,9 @@ footer {
   footer .goaExcursions img {
     width: 250px; }
 
-@media (max-width: 576px) {
-  * h4 {
-    font-size: 16px; }
-  * h5 {
-    font-size: 20px; }
-  * p {
-    font-size: 18px; }
-  .cardMain img {
-    height: 90%;
-    width: 90%; }
-  .bitcoin img {
-    width: 50%; } }
+@media (max-width: 992px) {
+  footer span {
+    font-size: 16px; } }
 
 @media (max-width: 768px) {
   * {
@@ -194,13 +185,28 @@ footer {
         font-size: 35px; }
     * h5 {
       font-size: 24px; }
+  .price img {
+    width: 280px;
+    height: 312.2px; }
   footer img {
     width: 20px; }
   footer .goaExcursions img {
     width: 150px; } }
 
-@media (max-width: 992px) {
-  footer span {
-    font-size: 16px; } }
+@media (max-width: 576px) {
+  * h4 {
+    font-size: 16px; }
+  * h5 {
+    font-size: 20px; }
+  * p {
+    font-size: 18px; }
+  .cardMain img {
+    height: 90%;
+    width: 90%; }
+  .price img {
+    width: 120px;
+    height: 133.8px; }
+  .price .btcNum {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
