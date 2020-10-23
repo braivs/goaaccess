@@ -173,9 +173,17 @@ footer {
     width: 250px; }
 
 @media (max-width: 576px) {
+  * h4 {
+    font-size: 16px; }
+  * h5 {
+    font-size: 20px; }
+  * p {
+    font-size: 18px; }
   .cardMain img {
     height: 90%;
-    width: 90%; } }
+    width: 90%; }
+  .bitcoin img {
+    width: 50%; } }
 
 @media (max-width: 768px) {
   * {
