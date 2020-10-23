@@ -1,85 +1,71 @@
 * {
   font-family: 'Lora', serif;
   font-size: 25px; }
-
-body a {
-  text-decoration: none;
-  color: black; }
-  body a:visited {
+  * a {
+    text-decoration: none;
     color: black; }
-
-body p {
-  margin: 0 0 10px 0; }
-  body p span {
-    color: orange; }
-
-body .nextPage, body .prevPage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  body .nextPage a, body .prevPage a {
+    * a:visited {
+      color: black; }
+  * p {
+    margin: 0 0 10px 0; }
+    * p span {
+      color: orange; }
+  * .nextPage, * .prevPage {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #009AD0; }
-    body .nextPage a img, body .prevPage a img {
-      height: 15px;
-      width: auto; }
-
-body h1 {
-  font-size: 65px;
-  color: red;
-  margin-top: 25px; }
-  body h1 span {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    * .nextPage a, * .prevPage a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #009AD0; }
+      * .nextPage a img, * .prevPage a img {
+        height: 15px;
+        width: auto; }
+  * h1 {
     font-size: 65px;
+    color: red;
+    margin-top: 25px; }
+    * h1 span {
+      font-size: 65px;
+      color: orange; }
+  * h2 {
+    font-size: 40px; }
+    * h2 span {
+      font-size: 40px;
+      color: orange; }
+  * h3 {
     color: orange; }
-
-body h2 {
-  font-size: 40px; }
-  body h2 span {
-    font-size: 40px;
-    color: orange; }
-
-body h3 {
-  color: orange; }
-
-body h4 {
-  font-size: 30px;
-  color: #BD8913; }
-
-body h5 {
-  color: blue;
-  font-size: 30px; }
-
-body .card img {
-  margin: 10px auto 0;
-  width: 200px;
-  height: 200px; }
-
-body .cardMain img {
-  width: 300px;
-  height: 350px; }
-
-body .row {
-  margin: 50px 0; }
-
-body .modal .modal-dialog {
-  width: 100%; }
+  * h4 {
+    font-size: 30px;
+    color: #BD8913; }
+  * h5 {
+    color: blue;
+    font-size: 30px; }
+  * .card img {
+    margin: 10px auto 0;
+    width: 200px;
+    height: 200px; }
+  * .cardMain img {
+    width: 300px;
+    height: 350px; }
+  * .row {
+    margin: 50px 0; }
 
 header {
   margin-top: 50px; }
@@ -185,5 +171,28 @@ footer {
     opacity: 0.5; }
   footer .goaExcursions img {
     width: 250px; }
+
+@media (max-width: 576px) {
+  .cardMain img {
+    height: 90%;
+    width: 90%; } }
+
+@media (max-width: 768px) {
+  * {
+    font-size: 20px; }
+    * h1 {
+      font-size: 35px; }
+      * h1 span {
+        font-size: 35px; }
+    * h5 {
+      font-size: 24px; }
+  footer img {
+    width: 20px; }
+  footer .goaExcursions img {
+    width: 150px; } }
+
+@media (max-width: 992px) {
+  footer span {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
